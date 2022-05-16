@@ -1,0 +1,36 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background-image: url('/assets/images/login_bg.jpg');
+}
+.aa {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ff {
+    position: relative;
+}
+.loginAndRegBox {
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%); */
+}
+.as {
+    height: 100%;
+    /* height: calc(100%-60px); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-box {
+    height: 60px;
+    /* background-image: url('/assets/images/login_title.png');
+    background-size: cover; */
+    background: url('/assets/images/login_title.png') no-repeat center;
+}
