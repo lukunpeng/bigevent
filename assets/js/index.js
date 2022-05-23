@@ -1,5 +1,10 @@
 $(function () {
 
+
+    $('#pub').on('click',function(e){
+        localStorage.removeItem('id')
+        localStorage.removeItem('flag')
+    })
     getUserInfo()
 
 
@@ -51,7 +56,6 @@ function getUserInfo() {
         //     Authorization: localStorage.getItem('token') || ''
         // },
         success: function (res) {
-            console.log(res);
             if (res.code !== 0) {
                 return layui.layer.msg('获取用户信息失败！')
             }

@@ -1,0 +1,22 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 15px;
+  background-color: #f2f3f5;
+  background-image: url('/assets/images/html_bg.gif');
+}
+
+.layui-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#form-add{
+    padding-top: 10px;
+    padding-right: 10px;
+}

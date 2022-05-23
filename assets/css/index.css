@@ -1,3 +1,9 @@
+body{
+  background-image: url('/assets/images/html_bg.gif');
+
+}
+
+
 .layui-footer {
     text-align: center;
     font-size: 12px;
