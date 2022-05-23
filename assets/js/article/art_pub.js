@@ -19,7 +19,7 @@ $(function () {
                     }
                     let imgURL = 'http://www.liulongbin.top:3008' + res.data.cover_img
                     $('#image').attr('src', imgURL)
-
+                    console.log(res);
                     form.val('form-pub', res.data)
 
                     // 1. 初始化图片裁剪器
@@ -31,16 +31,23 @@ $(function () {
                     }
                     // 3. 初始化裁剪区域
                     $image.cropper(options)
-                        // 根据文件，创建对应的 URL 地址
-                        let newImgURL = imgURL
-                        // 为裁剪区域重新设置图片
-                        // newImgURL = localStorage.getItem('url')
-                        $image
-                            .cropper('destroy') // 销毁旧的裁剪区域
-                            .attr('src', newImgURL) // 重新设置图片路径
-                            .cropper(options) // 重新初始化裁剪区域
+                    // 根据文件，创建对应的 URL 地址
+                    let newImgURL = imgURL
+                    // 为裁剪区域重新设置图片
+                    // newImgURL = localStorage.getItem('url')
+                    $image
+                        .cropper('destroy') // 销毁旧的裁剪区域
+                        .attr('src', newImgURL) // 重新设置图片路径
+                        .cropper(options) // 重新初始化裁剪区域
+
+                    // $('[name=content]').html(res.data.content)
+                    initEditor()
+
                 }
             })
+        }else{
+                // 初始化富文本编辑器
+    initEditor()
         }
     }
 
@@ -66,7 +73,8 @@ $(function () {
     }
 
     // 初始化富文本编辑器
-    initEditor()
+    // initEditor()
+    
     // localStorage.getItem('imgURL')
     // $('#image').attr('src', localStorage.getItem('imgURL'))
 
