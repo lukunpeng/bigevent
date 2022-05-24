@@ -45,9 +45,9 @@ $(function () {
 
                 }
             })
-        }else{
-                // 初始化富文本编辑器
-    initEditor()
+        } else {
+            // 初始化富文本编辑器
+            initEditor()
         }
     }
 
@@ -74,7 +74,7 @@ $(function () {
 
     // 初始化富文本编辑器
     // initEditor()
-    
+
     // localStorage.getItem('imgURL')
     // $('#image').attr('src', localStorage.getItem('imgURL'))
 
